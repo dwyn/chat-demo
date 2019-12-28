@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div id="new-message-container">
+        <form id="new-message-form">
+            <!-- content -->
+            <textarea name="message-content" id="new-message-content" rows="10" cols="91"></textarea><br>
+            <!-- creator -->
+            <label for="message-creator">Created By:</label>
+            <input type="text" id="new-message-creator">
+            <!-- submit btn -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="messages-container"></div>
+
+    <script src="src/components/app.js"></script>
+    <script src="src/components/message.js"></script>
+    <script src="src/components/messages.js"></script>
+    <script src="src/adapters/MessagesAdapter.js"></script>
+    <script src="src/index.js"></script>
+
+</body>
+</html>
