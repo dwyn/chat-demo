@@ -1,6 +1,5 @@
 class Messages {
     constructor() {
-        // debugger
         this.messages = []
         this.adapter = new MessagesAdapter()
         this.initBindings()
@@ -9,7 +8,6 @@ class Messages {
     }
 
     initBindings() {
-        // debugger
         // new message
         this.newMessageContainer = document.getElementById('new-message-container')
         this.newMessageContent = document.getElementById('new-message-content')
@@ -27,7 +25,7 @@ class Messages {
         // this.newCommentContent = document.getElementById('new-comment-content')
         // this.newCommentCreator = document.getElementById('new-comment-creator')
 
-        // new like
+        // new likeOr Or
 
         // event listeners
         this.newMessageForm.addEventListener('submit', this.createMessage.bind(this))
